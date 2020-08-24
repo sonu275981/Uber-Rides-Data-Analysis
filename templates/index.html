@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- As a link -->
+<nav class="navbar navbar-light bg-danger">
+  <a class="navbar-brand" href="#">Uber ride</a>
+</nav>
+
+  <nav class="navbar navbar-light bg-success">
+    <span class="navbar-brand mb-0 h1">Uber Weekly Ride Analysis</span>
+  </nav>
+
+<div class="container">
+  <h2>Enter your Value which you want to predict</h2>
+
+  <form action="{{url_for('predict')}}" method="post">
+    <div class="form-inline">
+      <div class="col-auto">
+        <input type="text" name="Priceperweek" class="form-control" placeholder="Price per week" required="required">
+      </div>
+      <div class="col-auto">
+        <input type="text" name="Population" class="form-control" placeholder="Population" required="required">
+      </div>
+      <div class="col-auto">
+        <input type="text" name="Monthlyincome" class="form-control" placeholder="Monthly income" required="required">
+      </div>
+      <div class="col-auto">
+        <input type="text" name="Averageparkingpermonth" class="form-control" placeholder="Average parking/month" required="required">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">submit</button>
+    </div>
+  </form>
+</div>
+
+<br>
+<div class="col-auto">
+<h2 style="color:blue;">{{predicition_text}}</h2>
+</div>
+
+<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018 by sonu</p>
+</body>
+</html>
