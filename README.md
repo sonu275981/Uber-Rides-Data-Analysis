@@ -15,15 +15,27 @@ Required Packages
 The code is written in a Pycharm with a Python 2.7 kernel, and in addition it requires the following packages:
 
 Numpy (version: 1.11.2)
+
 Pandas (version: 0.19.2)
+
 Matplotlib (version: 1.5.3)
+
 Seaborn (version: 0.6.0)
+
 lask==1.1.1
+
 gunicorn==19.9.0
+
 Jinja2==2.10.1
+
 MarkupSafe==1.1.1
+
 Werkzeug==0.15.5
+
 numpy>=1.9.2
+
 scipy>=0.15.1
+
 scikit-learn>=0.18
+
 pandas>=0.19
