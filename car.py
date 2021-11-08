@@ -24,6 +24,6 @@ print("test score",reg.score(X_test,y_test))
 
 pickle.dump(reg, open("taxi.pkl", "wb"))  # here wb means write binary
 
-model = pickle.load(open("taxi.pkl", "rb"))  # here wb means read binary
+model = pickle.load(open("taxi.pkl", "rb"))  # here rb means read binary
 
 print(model.predict([[80,1770000,6000,85]]))
